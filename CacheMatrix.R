@@ -16,10 +16,10 @@ makeCacheMatrix <- function(m = matrix()) {
 
 
 cacheSolve <- function(m, ...) {
-  ## Return a matrix that is the inverse of 'm'
+ 
   invm <- m$getInverse()
   if (!is.null(invm)) {
-    message("getting cached data")
+    message("data")
     return(invm)
   }
   matrik <- m$get()
